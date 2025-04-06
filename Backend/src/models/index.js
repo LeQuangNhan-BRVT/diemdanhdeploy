@@ -18,6 +18,12 @@ const sequelize = new Sequelize(
         host: process.env.DB_HOST,    // Host database
         port: process.env.DB_PORT || 3306, // Cổng database (mặc định 3306 nếu không có trong .env)
         dialect: 'mysql',             // Loại database đang sử dụng
+        dialectOptions: {
+      ssl: {
+        require: true, // ⚠️ bắt buộc với Aiven
+        rejectUnauthorized: false // bỏ qua kiểm tra chứng chỉ
+      }
+    },
         logging: env === 'development' ? console.log : false, // Bật logging SQL khi ở môi trường development
         // (Tùy chọn) Thêm các cấu hình khác cho Sequelize nếu cần
         // pool: { max: 5, min: 0, acquire: 30000, idle: 10000 },
