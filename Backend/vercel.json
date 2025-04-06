@@ -1,15 +1,15 @@
 {
-  "version": 2,
+  "projects": "diemdanh-server",
   "builds": [
     {
-      "src": "app.js",
+      "src": "Backend/app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "Backend/app.js"
     }
   ]
 }
