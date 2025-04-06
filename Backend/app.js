@@ -97,3 +97,7 @@ db.sequelize.authenticate() // Chỉ kiểm tra kết nối, không thay đổi 
     console.error('!!! Unable to connect to the database:', err);
     process.exit(1); // Thoát nếu không kết nối được DB
   });
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+module.exports = app; 
