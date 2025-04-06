@@ -39,7 +39,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 //Middleware
-app.use(cors());
+
 app.use(bodyParser.json());
 
 //routes
