@@ -20,7 +20,7 @@ const sequelize = new Sequelize(
         dialect: 'mysql',             // Loại database đang sử dụng
         dialectOptions: {
       ssl: {
-        require: true, // ⚠️ bắt buộc với Aiven
+        require: true, // bắt buộc với Aiven
         rejectUnauthorized: false // bỏ qua kiểm tra chứng chỉ
       }
     },
