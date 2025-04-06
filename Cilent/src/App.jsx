@@ -10,7 +10,7 @@ import ClassList from './components/teacher/ClassList';
 import CreateClass from './components/teacher/CreateClass';
 import ClassSchedule from './components/teacher/ClassSchedule';
 import ClassStudents from './components/teacher/ClassStudents';
-import QrScanner from './components/student/QrScanner';
+import QrScanner from './components/student/QRScanner';
 import AttendanceHistory from './components/student/AttendanceHistory';
 import CssBaseline from '@mui/material/CssBaseline';
 import '@fontsource/montserrat/300.css';
