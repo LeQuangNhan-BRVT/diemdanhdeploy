@@ -1,6 +1,18 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/App.jsx",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["node_modules/**", "src/**"]
+      }
+    }
+  ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*)",
+      "dest": "src/App.jsx"
+    }
   ]
 }
