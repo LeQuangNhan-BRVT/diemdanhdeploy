@@ -24,7 +24,7 @@ export const login = async (username, password, role) => {
       token: data.token,
     };
   } catch (error) {
-    localStorage.clear();
+    //localStorage.clear();
     if (error.response) {
       throw new Error(error.response.data.message || "Đăng nhập thất bại");
     }
