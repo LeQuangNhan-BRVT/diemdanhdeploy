@@ -64,6 +64,7 @@ const Login = () => {
       }
     } catch (error) {
       console.error('Login error:', error);
+      console.log(error);
       setError(error.message || 'Đăng nhập thất bại');
     } finally {
       setLoading(false);
