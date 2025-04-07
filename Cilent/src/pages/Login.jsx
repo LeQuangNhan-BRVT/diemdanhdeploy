@@ -41,6 +41,7 @@ const Login = () => {
   }, [navigate]);
 
   const handleLogin = async (e) => {
+    console.log("handleLogin called");
     e.preventDefault();
     setError(null);
     setLoading(true);
